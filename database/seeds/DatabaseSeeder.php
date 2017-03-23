@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
         		'first_name'=> 'Sanjeev',
         		'last_name'	=> 'Khadka',
         		'user_type'	=> 'admin',
-        		'approval'	=>	'1'
+        		'approval'	=>	'1',
+                
         	],
             [
                 'email'     => 'sanjeev_kdk32@yahoo.com',

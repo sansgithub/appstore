@@ -1,6 +1,9 @@
-Welcome you are logged in as <strong>{!! Auth::user()->email !!}</strong>
+<h1>Welcome {{ Auth::user()->first_name }} you are logged in as <strong>User</strong></h1>
 
-<!--<div class="row">
+<ul class="nav navbar-nav navbar-right">   
+	<li><a href="{{ route('logout') }}">Logout</a></li>
+</ul>
+{{--<div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		
             <header><h3>Upload App</h3></header>
@@ -18,4 +21,4 @@ Welcome you are logged in as <strong>{!! Auth::user()->email !!}</strong>
             </form>
        
 	</div>
-</div>-->
+</div>--}}

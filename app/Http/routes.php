@@ -16,7 +16,7 @@ Route::group(['middleware' => ['web']], function () {
 		'as'	=> 'signup'
 	]);
 
-	Route::post('/attempt',[
+	Route::post('/login-attempt',[
 		'uses'	=> 'UserController@postSignIn',
 		'as'	=> 'attempt'
 	]);
@@ -25,6 +25,11 @@ Route::group(['middleware' => ['web']], function () {
     	'uses'			=> 'UserController@getDashboard',
     	'as'			=> 'dashboard',
     	'middleware'	=> 'auth'
+   	]);
+
+   	Route::post('/signup-attempt',[
+   		'uses'	=> 'UserController@postSignUp',
+   		'as'	=> 'signup-attempt'
    	]);
 
    	Route::get('/logout',[
